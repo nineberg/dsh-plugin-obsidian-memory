@@ -1,5 +1,7 @@
 # dsh-plugin-vault-memory
 
+![License](https://img.shields.io/github/license/nineberg/dsh-plugin-obsidian-memory) ![Platform](https://img.shields.io/badge/DeepSeek%20Harness-plugin-0969da) ![GitHub stars](https://img.shields.io/github/stars/nineberg/dsh-plugin-obsidian-memory?style=social)
+
 > [!NOTE]
 > **Fork 说明**：本仓库是 [zhaoxuejie/dsh-plugin-vault-memory](https://github.com/zhaoxuejie/dsh-plugin-vault-memory)（v0.4.0，MIT © moqian）的改良分支，由 [nineberg](https://github.com/nineberg) 维护。在原版基础上修复了若干 DeepSeek Harness（0.2.2-rc.1）兼容性问题，并对悬浮挂件交互/视觉做了增强。上游 MIT 协议与原许可声明完整保留（见 [LICENSE](LICENSE)）。
 >
