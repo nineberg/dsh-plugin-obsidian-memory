@@ -1,0 +1,40 @@
+{
+  "name": "dsh-plugin-vault-memory",
+  "version": "0.4.0",
+  "description": "让本地 Obsidian 知识库成为 DeepSeek Harness agent 的长期记忆与工作台（索引 + 检索工具 + 会话记忆注入 + 捕获 + 可拖拽图标悬浮球 + 中央面板 + 灵动岛集成）",
+  "type": "module",
+  "main": "src/index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nineberg/dsh-plugin-obsidian-memory.git"
+  },
+  "homepage": "https://github.com/nineberg/dsh-plugin-obsidian-memory#readme",
+  "bugs": {
+    "url": "https://github.com/nineberg/dsh-plugin-obsidian-memory/issues"
+  },
+  "author": "nineberg (fork of zhaoxuejie/dsh-plugin-vault-memory by moqian)",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./client": "./src/client.js",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "cordis.patch.yml", "README.md", "LICENSE", "icon.svg"],
+  "scripts": {
+    "test": "node test/run-all.mjs"
+  },
+  "keywords": ["dsh", "deepseek-harness", "obsidian", "vault", "knowledge-base", "second-brain"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "dependencies": {
+    "schemastery": "^3.18.0"
+  },
+  "license": "MIT"
+}
